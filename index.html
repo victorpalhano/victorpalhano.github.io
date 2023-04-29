@@ -1,0 +1,28 @@
+<html lang="en">
+  <head>
+    <script src="https://cdn.jsdelivr.net/npm/pdf-lib/dist/pdf-lib.min.js"></script>
+    <script src="/node_modules/multer/dist/multer.min.js"></script>
+
+    <meta charset="UTF-8">
+    <title>Anexar e Comprimir Arquivos PDF</title>
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+  </head>
+  <body>
+    <header>
+      <h1>Anexar e Comprimir Arquivos PDF</h1>
+    </header>
+    <main>
+      <form id="pdf-form" enctype="multipart/form-data">
+        <label for="pdf-files">Selecione os arquivos PDF a serem anexados:</label>
+        <input type="file" id="pdf-files" name="pdfFiles[]" accept="application/pdf" multiple>
+        <button type="submit">Enviar</button>
+      </form>
+      <div id="progress-container">
+        <div id="progress-bar"></div>
+      </div>
+      <div id="download-container"></div>
+    </main>
+    <script src="script.js"></script>
+  </body>
+</html>

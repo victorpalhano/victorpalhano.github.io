@@ -1,0 +1,26 @@
+{
+  "name": "package.json",
+  "version": "1.0.0",
+  "description": "lista de dependencias",
+  "main": "script.js",
+  "scripts": {
+    "test": "oi",
+    "start": "node server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/victorpalhano/victorpalhano.github.io.git"
+  },
+  "author": "Victor Palhano",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/victorpalhano/victorpalhano.github.io/issues"
+  },
+  "homepage": "https://github.com/victorpalhano/victorpalhano.github.io#readme",
+  "dependencies": {
+    "compression": "^1.7.4",
+    "express": "^4.18.2",
+    "multer": "^1.4.5-lts.1",
+    "pdf-lib": "^1.17.1"
+  }
+}
